@@ -19,3 +19,7 @@ if __name__ == '__main__':
     print(andre.idade)
     for filho in andre.filhos:
         print(filho.nome)
+    andre.sobrenome = 'Ramalho' #criação de atributo dinamico fazendo atribuição
+    del andre.filhos  #contrário dessa operação com del
+    print(andre.__dict__)  #os atributos de instancia ficam presentes no atributo especial dunder dict
+    print(renzo.__dict__)
